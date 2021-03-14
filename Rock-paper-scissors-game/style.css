@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #040452;
+}
+
+header {
+  background: white;
+  padding: 20px;
+}
+
+header > h1 {
+  color: #24272e;
+  text-align: center;
+  font-family: Asap, sans-serif;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: Asap, sans-serif;
+  position: relative;
+}
+
+.badge {
+  background-color: #f49f1c;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-serif;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#comp-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Asap, sans-serif;
+}
+
+.choices {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.choice {
+  border: 4px solid white;
+  border-radius: 50%;
+  margin: 0 20 px;
+  padding: 10px;
+  display: inline-block;
+  background-color: #f49f1c;
+  transition: 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: #292c34;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* #reset-button {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-family: Asap, sans-serif;
+  font-weight: bold;
+  margin: 20px 0 0 0;
+} */
+
+#reset-button {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+div > button {
+  background-color: #f49f1c;
+  color: white;
+  font-family: Asap, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+footer > p {
+  color: white;
+  font-family: Asap, sans-serif;
+  text-align: center;
+}
+
+footer > p > a {
+  text-decoration: none;
+}
+
+#sakarious {
+  background-color: #f49f1c;
+  color: white;
+  font-family: Asap, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 3px;
+  border: 0px;
+  border-radius: 5px;
+}
