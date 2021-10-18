@@ -32,11 +32,8 @@ function convertToWord(str) {
 
 function win(userChoice, computerChoice) {
     UserScore++
-    console.log("WIN");
-    console.log(UserScore);
     Userscore_span.innerHTML = UserScore;
     Compscore_span.innerHTML = CompScore;
-    console.log(`${userChoice} beats ${computerChoice}`);
     let user = "user".fontsize(3).sub();
     let comp = "comp".fontsize(3).sub();
     Result_p.innerHTML = `${convertToWord(userChoice)}${user} beats ${convertToWord(computerChoice)}${comp}. You win 🥂🎊🎊🎉🎉` ;
@@ -44,11 +41,8 @@ function win(userChoice, computerChoice) {
 
 function lose(userChoice, computerChoice) {
     CompScore++;
-    console.log("WIN");
-    console.log(UserScore);
     Userscore_span.innerHTML = UserScore;
     Compscore_span.innerHTML = CompScore;
-    console.log(`${userChoice} loses ${computerChoice}`);
     let user = "user".fontsize(3).sub();
     let comp = "comp".fontsize(3).sub();
     Result_p.innerHTML = `${convertToWord(userChoice)}${user} loses ${convertToWord(computerChoice)}${comp}. You lose 🤡🤡🤡` ;
@@ -86,9 +80,6 @@ function draw(userChoice, computerChoice) {
 
 function game(userChoice) {
     const computerChoice = getComputerChoice();
-    console.log("Computer chose " + computerChoice);
-    console.log("You choice " + userChoice)
-    console.log(userChoice + computerChoice);
     /*
     WIN CASES
     if user choses rock and computer choses scissors
@@ -130,7 +121,6 @@ function game(userChoice) {
 
 //function resetsGame(){
     document.getElementById("button").addEventListener('click', function(){
-        console.log("I was clicked")
         UserScore = 0
         CompScore = 0
         let reset_word = "Click Either Rock, Paper or Scissors to start Game."
